@@ -7,288 +7,257 @@
     <title>Tianna's Friend Survey</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar">
         <span class="navbar-brand mb-0 h1">Tianna's Friends</span>
     </nav>
 
     <div class= "container">
         <form>
+            <h5>Name: <input placeholder="Type Name Here" id="nameInput"></h5>
+            <br></br>
+            <h5>Picture Link: <input placeholder="Type Picture Link Here" id="pictureInput"></h5>
+            <br></br>
             <h5>I am a very spotaneous person who dislikes extensive planning.</h5>
                 <div class="row">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="1">
                         <label class="form-check-label" for="inlineRadio1">1 - Strongly Disagree</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="2">
                         <label class="form-check-label" for="inlineRadio2">2 - Disagree</label>
                 </div>         
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="3">
                         <label class="form-check-label" for="inlineRadio3">3 - Neither Agree Nor Disagree</label>
                 </div>
                 <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option4">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="4">
                             <label class="form-check-label" for="inlineRadio4">4 - Agree</label>
                 </div>
                 <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option5">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="5">
                             <label class="form-check-label" for="inlineRadio5">5 - Strongly Agree</label>
                 </div>
             </div>
-        </form>
-    </div>
 
-    <div class= "container">
-        <form>
             <h5>I prefer spending time with only one or two other people rather than a large group.</h5>
                 <div class="row">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="1">
                             <label class="form-check-label" for="inlineRadio1">1 - Strongly Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="2">
                             <label class="form-check-label" for="inlineRadio2">2 - Disagree</label>
                     </div>         
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="3">
                             <label class="form-check-label" for="inlineRadio3">3 - Neither Agree Nor Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 - Agree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option5">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 - Strongly Agree</label>
                     </div>
                 </div>
-        </form>
-    </div>
 
-    <div class= "container">
-        <form>
             <h5>It is easy for little things to frustrate me.</h5>
                 <div class="row">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="1">
                             <label class="form-check-label" for="inlineRadio1">1 - Strongly Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="2">
                             <label class="form-check-label" for="inlineRadio2">2 - Disagree</label>
                     </div>         
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="3">
                             <label class="form-check-label" for="inlineRadio3">3 - Neither Agree Nor Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 - Agree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option5">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 - Strongly Agree</label>
                     </div>
                 </div>
-        </form>
-    </div>
 
-    <div class= "container">
-        <form>
             <h5>I prefer to focus on the realistic side of life rather than the fantasy.</h5>
                 <div class="row">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="1">
                             <label class="form-check-label" for="inlineRadio1">1 - Strongly Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="2">
                             <label class="form-check-label" for="inlineRadio2">2 - Disagree</label>
                     </div>         
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="3">
                             <label class="form-check-label" for="inlineRadio3">3 - Neither Agree Nor Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 - Agree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option5">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 - Strongly Agree</label>
                     </div>
                 </div>
-        </form>
-    </div>
 
-    <div class= "container">
-        <form>
             <h5>I can easily make friends in any setting.</h5>
                 <div class="row">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="1">
                             <label class="form-check-label" for="inlineRadio1">1 - Strongly Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="2">
                             <label class="form-check-label" for="inlineRadio2">2 - Disagree</label>
                     </div>         
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="3">
                             <label class="form-check-label" for="inlineRadio3">3 - Neither Agree Nor Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 - Agree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option5">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 - Strongly Agree</label>
                     </div>
                 </div>
-        </form>
-    </div>
 
-    <div class= "container">
-        <form>
             <h5>I can relate to others even if I haven't been in the same situation.</h5>
                 <div class="row">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="1">
                             <label class="form-check-label" for="inlineRadio1">1 - Strongly Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="2">
                             <label class="form-check-label" for="inlineRadio2">2 - Disagree</label>
                     </div>         
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="3">
                             <label class="form-check-label" for="inlineRadio3">3 - Neither Agree Nor Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 - Agree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option5">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 - Strongly Agree</label>
                     </div>
                 </div>
-        </form>
-    </div>
 
-    <div class= "container">
-        <form>
             <h5>I enjoy listening more than speaking.</h5>
                 <div class="row">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="1">
                             <label class="form-check-label" for="inlineRadio1">1 - Strongly Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="2">
                             <label class="form-check-label" for="inlineRadio2">2 - Disagree</label>
                     </div>         
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="3">
                             <label class="form-check-label" for="inlineRadio3">3 - Neither Agree Nor Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 - Agree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option5">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 - Strongly Agree</label>
                     </div>
                 </div>
-        </form>
-    </div>
 
-    <div class= "container">
-        <form>
             <h5>I dislike spending too much time in one place.</h5>
                 <div class="row">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="1">
                             <label class="form-check-label" for="inlineRadio1">1 - Strongly Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="2">
                             <label class="form-check-label" for="inlineRadio2">2 - Disagree</label>
                     </div>         
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="3">
                             <label class="form-check-label" for="inlineRadio3">3 - Neither Agree Nor Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 - Agree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option5">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 - Strongly Agree</label>
                     </div>
                 </div>
-        </form>
-    </div>
 
-    <div class= "container">
-        <form>
             <h5>I would have a great time at a sports bar.</h5>
                 <div class="row">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="1">
                             <label class="form-check-label" for="inlineRadio1">1 - Strongly Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="2">
                             <label class="form-check-label" for="inlineRadio2">2 - Disagree</label>
                     </div>         
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="3">
                             <label class="form-check-label" for="inlineRadio3">3 - Neither Agree Nor Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 - Agree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option5">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 - Strongly Agree</label>
                     </div>
                 </div>
-        </form>
-    </div>
 
-    <div class = "container">
-        <form>
             <h5>I consider myself a kid at heart.</h5>
                 <div class="row">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="1">
                             <label class="form-check-label" for="inlineRadio1">1 - Strongly Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="2">
                             <label class="form-check-label" for="inlineRadio2">2 - Disagree</label>
                     </div>         
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="3">
                             <label class="form-check-label" for="inlineRadio3">3 - Neither Agree Nor Disagree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option4">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="4">
                                 <label class="form-check-label" for="inlineRadio4">4 - Agree</label>
                     </div>
                     <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option5">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="5">
                                 <label class="form-check-label" for="inlineRadio5">5 - Strongly Agree</label>
                     </div>
                 </div>

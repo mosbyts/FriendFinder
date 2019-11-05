@@ -1,0 +1,9 @@
+form, .mainIntro{
+    background-color: yellow;
+    border: solid thick #FA1F19;
+    color: #FA1F19;
+}
+
+.form-check{
+    margin: 0px 20px 0px 20px;
+}
