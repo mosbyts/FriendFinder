@@ -13,25 +13,19 @@ module.exports = function(app){
 //Get data and add new friend to friends array
       var newFriend = req.body;
       friends.push(newFriend);
-
+      console.log(newFriend);
       var newFriendScore = newFriend.score;
+      console.log(newFriendScore);
 //Loop through existing friend's score  
       for(var i = 0; i < friends.length; i++){
          var friendScore = friends[i].score;
 //Loop through new friend's score     
       for(var x = 0; x < newFriendScore.length; x++){
          if(friendScore == newFriendScore){
-            $("#submitSurvey").on("click", function(event){
-               event.preventDefault();
-               alert("You're a perfect match with " + res.json(friends[i]) + "!");
-            });
+
          };
       };
       };
-   });
-
-
-
-   
-
+      alert("You're a perfect match with " + res.json(friends[i]) + "!");
+      });
 };

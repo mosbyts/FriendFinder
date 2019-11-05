@@ -7,3 +7,23 @@ form, .mainIntro{
 .form-check{
     margin: 0px 20px 0px 20px;
 }
+
+.btn{
+    margin: 5px;
+}
+
+body {
+    background-image: url("bobsBurgers.jpg");
+}
+
+.navbar{
+    background-color: yellow;
+    color: #FA1F19;
+    margin-bottom: 20px;
+}
+
+.footer{
+    background-color: yellow;
+    color: #FA1F19;
+    margin-top: 20px;
+}
