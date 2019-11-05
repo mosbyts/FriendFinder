@@ -21,7 +21,10 @@ module.exports = function(app){
 //Loop through new friend's score     
       for(var x = 0; x < newFriendScore.length; x++){
          if(friendScore == newFriendScore){
-            $("You're a perfect match with " + res.json(friends[i]) + "!");
+            $("#submitSurvey").on("click", function(event){
+               event.preventDefault();
+               alert("You're a perfect match with " + res.json(friends[i]) + "!");
+            });
          };
       };
       };
