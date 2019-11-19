@@ -10,22 +10,40 @@ module.exports = function(app){
 
 //Handle incoming survey results and compatibility logic
    app.post("/api/friends", function(req, res){
+//Set up best match variable with properties
+      var totalDifference = 0;
+      var bestMatch = {
+         name: "",
+         photo: "",
+         friendDifference: 1000
+      };
 //Get data and add new friend to friends array
-      var newFriend = req.body;
-      friends.push(newFriend);
-      console.log(newFriend);
-      var newFriendScore = newFriend.score;
-      console.log(newFriendScore);
-//Loop through existing friend's score  
-      for(var i = 0; i < friends.length; i++){
-         var friendScore = friends[i].score;
-//Loop through new friend's score     
-      for(var x = 0; x < newFriendScore.length; x++){
-         if(friendScore == newFriendScore){
-
-         };
-      };
-      };
-      alert("You're a perfect match with " + res.json(friends[i]) + "!");
+      var user = req.body;
+      var userName = user.name;
+      var userScoreString = user.scores;
+      var userScoreArray = userScoreString.map(function(userData){
+         return parseInt(userData, 10);
       });
+
+      user = {
+         name: req.body.name,
+         photo: req.body.photo,
+         scores: userScoreArray
+      };
+      console.log(user);
+      friends.push(user);
+      var userScoreSum = userScoreArray.reduce(a, userScoreArray => a + userScoreArray, 0)
+//Loop through existing friend's score and find match 
+      for(var i = 0; i < friends.length; i++){
+         var friendScore = friends[i].score.reduce(a, userScoreArray => a + userScoreArray, 0);
+         totalDifference += Math.abs(userScoreSum - friendScore);
+
+         if(totalDifference <= bestMatch.friendDifference){
+            bestMatch.name = friends[i].name;
+            bestMatch.photo = friends[i].photo;
+            bestMatch.friendDifference = totalDifference;
+         }
+      };
+      console.log("You're a perfect match with " + bestMatch + "!");
+   });
 };
